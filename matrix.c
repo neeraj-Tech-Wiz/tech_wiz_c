@@ -1,6 +1,11 @@
+#include<stdio.h>
+void arraysearch (int a[10], int search);
+void add(int x, int y);
+void sub(int x,int y);
+void multiplication(int x ,int y);
+void div(int x ,int y);
 
-
-void main (){
+void main(){
     int a[10],i,search,x,y;
     printf("enter numbers of array");
     for(i=0;i<10;i++){
@@ -26,7 +31,7 @@ void arraysearch (int a[10], int search){
         }
     }
     if(flag==1){
-            printf("number i present at %d position",i);
+            printf("number %d present at %d position",search,i);
         }
         else{
             printf("number is not present");
@@ -42,13 +47,13 @@ void sub(int x,int y){
     sub=x-y;
     printf("\nsubstraction of number is %d",sub);
 }
-void multiplication (int x ,int y){
+void multiplication(int x ,int y){
     int mul=0;
     mul=x*y;
     printf("\nmultiplication of numbers is %d",mul);
 }
-void div (int x ,int y){
-    float div =0;
+void div(int x ,int y){
+    float div;
     div = x/y;
     printf("\ndivision of numbers is %f",div);
 }
