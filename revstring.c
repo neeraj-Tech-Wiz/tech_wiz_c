@@ -13,4 +13,5 @@ void main(){
     }
     printf("Reverse string is\n");
     puts(str2);
+
 }
